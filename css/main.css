@@ -46,7 +46,7 @@ img {
 
 .main-nav {
   margin-bottom: 10px;
-  background-color: rgb(159, 189, 215);
+  background-color: rgb(249, 250, 252);
 }
 
 .main-nav ul {
@@ -73,6 +73,7 @@ img {
   text-decoration: none;
   font-size: 1.25rem;
   font-family: 'Roboto', Helvetica, sans-serif;
+  padding: 8px 0;
 }
 
 .main-nav ul li a:hover {
@@ -87,8 +88,14 @@ main p {
   text-align: justify;
 }
 
+.owner,
+.location {
+  border: 1px dotted black;
+  padding-left: 20px;
+}
+
 .contact-section {
-  background-color: rgb(239, 242, 244);
+  background-color: rgb(249, 250, 252);
   border: 1px solid black;
   padding: 10px;
 }
@@ -129,6 +136,6 @@ form button:active {
   border-color: darkorange;
 }
 
-.site-footer {
+footer {
   padding: 2rem 0;
 }
