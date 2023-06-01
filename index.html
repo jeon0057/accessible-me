@@ -14,10 +14,10 @@
 
 <body id="content">
   <div class="container">
-    <header>
+    <header role="banner">
       <a href="#maincontent">Skip to Content &darr;</a>
       <h1>Jam Box Studios</h1>
-      <nav class="main-nav">
+      <nav class="main-nav" role="navigation">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">Products</a></li>
@@ -25,19 +25,21 @@
           <li><a href="#">Studio</a></li>
         </ul>
       </nav>
-      <img src="https://placekitten.com/1200/900" class="banner" alt="A cat playing in the snow.">
+      <img src="https://placekitten.com/1200/900" class="banner" alt="A cat playing in the snow." role="img">
     </header>
-    <main id="maincontent">
-      <h2>Welcome to Jam Box</h2>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
-      <section class="owner">
+    <main id="maincontent" role="main">
+      <section class="welcome" role="region">
+        <h2>Welcome to Jam Box</h2>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus laboriosam praesentium nostrum ipsa eveniet, officia deserunt cumque eius esse enim, ipsam accusantium autem nihil quaerat sequi perferendis optio quia veritatis.</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam perferendis expedita sed itaque odit ipsam omnis, eos voluptates magni fugit culpa voluptatibus, inventore eaque, eligendi voluptatum! Voluptate iusto error voluptatibus.</p>
+      </section>
+      <section class="owner" role="region">
         <h3>Meet the owner</h3>
-        <ul>
-          <li>Name: John Doe</li>
-          <li>Title: CEO</li>
-          <li>Email: johnjoe@jambox.ca</li>
-          <li>Phone: 613-000-0000</li>
+        <ul itemscope itemtype="https://schema.org/Person">
+          <li itemprop="name">Name: John Doe</li>
+          <li itemprop="jobTitle">Title: CEO</li>
+          <li itemprop="email">Email: johnjoe@jambox.ca</li>
+          <li itemprop="telephone">Phone: 613-000-0000</li>
         </ul>
         <h3>Address</h3>
         <p>
@@ -47,7 +49,7 @@
           B3T 0L0
         </p>
       </section>
-      <section class="contact-section">
+      <section class="contact-section" role="region">
         <h2>Contact Us</h2>
         <form action="thanks.html">
           <label for="fname">Full Name</label>
@@ -62,7 +64,7 @@
         </form>
       </section>
     </main>
-    <footer>
+    <footer role="contentinfo">
       &copy; 2021 Jam Box Studios
     </footer>
     <a href="#content">Back to Top &uarr;</a>
