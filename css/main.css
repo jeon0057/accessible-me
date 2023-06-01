@@ -79,6 +79,10 @@ img {
   text-decoration: underline;
 }
 
+.main-nav ul li a:active {
+  color: darkorange;
+}
+
 main p {
   text-align: justify;
 }
@@ -116,9 +120,14 @@ form button {
   text-transform: uppercase;
 }
 
-/* form button:hover {
-  border-color: goldenrod;
-} */
+form button:hover {
+  text-decoration: underline;
+}
+
+form button:active {
+  color: darkorange;
+  border-color: darkorange;
+}
 
 .site-footer {
   padding: 2rem 0;
